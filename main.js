@@ -38,7 +38,31 @@ const pets = [
         image: './images/dino2.jpg',
         name: 'Susan',
         color: 'Custard',
-        specialSkill: '3am Zoomies',
-        type: 'Cat'
+        specialSkill: 'Smashing skulls',
+        type: 'Dino'
     },
 ]
+
+const printToDom = (toPrint, divId) => {
+    document.getElementById(divId).innerHTML = toPrint;
+}
+
+const petBuilder = (petArray) => {
+    let domString = '';
+    for (let i = 0; i < petArray.length; i++) {
+        const petCard = petArray[i];
+        domString += `
+        <div class="card">
+            <h2>${petCard.name}</h2>
+            <img src="${petCard.image}" alt="Image of ${petCard.name}" />
+            <p>Color: ${petCard.color}</p>
+            <p>Special Skill: ${petCard.specialSkill}</p>
+            <p>Type: ${petCard.type}</p>
+        </div>
+        `;
+
+    }
+    printToDom(domString, 'petZone');
+}
+
+petBuilder(pets);
