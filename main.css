@@ -34,3 +34,36 @@ h1 {
 .card img {
     width: 200px;
 }
+
+#petButtons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#petButtons button {
+    padding: 5px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 1em;
+}
+
+#All {
+    background-color: #c2185b;
+    color: white;
+}
+
+#Cat {
+    background-color: #757575;
+    color: white;
+}
+
+#Dog {
+    background-color: #bdbdbd;
+    color: white;
+}
+
+#Dino {
+    background-color: #009688;
+    color: white;
+}

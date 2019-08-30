@@ -65,4 +65,28 @@ const petBuilder = (petArray) => {
     printToDom(domString, 'petZone');
 }
 
+
+const buttonClick = (e) => {
+    const type = e.target.id;
+    const selectedPets = []; 
+        for (let i = 0; i < pets.length; i++) {
+            const newPets = pets[i];
+            if (newPets.type === type) {
+                selectedPets.push(newPets);
+            }
+        }
+
+        if (type === 'All') {
+            petBuilder(pets);
+        } else {
+            petBuilder(selectedPets);
+        }
+    }   
+
+
+document.getElementById('Cat').addEventListener('click', buttonClick);
+document.getElementById('Dog').addEventListener('click', buttonClick);
+document.getElementById('Dino').addEventListener('click', buttonClick);
+document.getElementById('All').addEventListener('click', buttonClick);
+
 petBuilder(pets);
