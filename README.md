@@ -4,7 +4,8 @@
 Use this application to look at adoptable pet profiles. Click on buttons to filter by pet.
 
 ## Screenshots
-
+![first view of pet adoption](https://raw.githubusercontent.com/LaCollins/pet-adoption/master/screenshots/mainview1.PNG)
+![second view of pet adoption](https://raw.githubusercontent.com/LaCollins/pet-adoption/master/screenshots/mainview2.PNG)
 
 ## How to run
 * Clone down this project
